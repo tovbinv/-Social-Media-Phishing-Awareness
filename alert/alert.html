@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Warning about a detected phishing attempt and guide to protect yourself.">
+  <title>Phishing Attempt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Phishing Attempt Detected!</h1>
+
+   
+
+    <img src="alert.jpg" alt="Warning sign" style="width:200px;height:200px;">
+    <p>You have fallen for a phishing attempt.</p>
+    <h4>User details that was compromised:</h4>
+    <div>
+      <p>Username: <span id="username"></span></p>
+      <p>Password: <span id="password"></span></p>
+    </div>
+    <p>Learn how to protect yourself from phishing attacks:</p>
+    <a href="../videos/video.html" class="btn">Video Guide</a>
+    <a href="../guide/guide.html" class="btn">Text Guide</a>
+  </main>
+
+  <script>
+    // Retrieve username and password from localStorage
+    const username = localStorage.getItem("username");
+    const password = localStorage.getItem("password");
+
+    // Display username and password
+    document.getElementById("username").textContent = username;
+    document.getElementById("password").textContent = password;
+
+    // // Event listener to the Download Guide button
+    // document.getElementById("downloadButton").addEventListener("click", function() {
+    //   window.location.href = 'https://www.dropbox.com/scl/fi/1usvi0j9xmahnwzi77i1o/guide.mp4?rlkey=zta5wcprmnyqjjk7wmdrhh50c&dl=0';
+    // });
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+h1, h2, h3, h4, h5, a, p, ul, li, img, header, section, div,body{margin: 0; padding: 0; }
+
+header {
+	width: 2000px;
+	height: 70px;
+	background: #f842b2;
+}
+
+.main-header {
+	padding-left:184px; 
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+section {
+    display: flex;
+    align-items: center; 
+	background-color: rgb(255, 255, 255);
+}
+
+.form-container {
+    display: flex;
+    align-items: center; 
+	height: 545px;
+	margin: 0 auto;
+	width: 100%
+	
+}
+
+.form-container img {
+    width: 35%; 
+    max-width: 641px; 
+    height: 200px; 
+    margin-right: 50px;
+	margin-top: -200px;
+	margin-left: 100px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.logo-container img {
+	width: 100%; 
+    max-width: 641px;
+    height: 400px;
+    margin-right: 50px;
+	margin-top: -50px;
+	margin-left: 100px;
+}
+
+.logo-container p {
+    margin-top: -50px;
+	margin-right: -70px;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 30px;
+
+}
+
+.form {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 420px;
+	float: right;
+    margin: 0 auto;
+    width: 641px;
+	background-color: #EFEEEE;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+	color: rgb(0, 0, 0);
+    font-family:Arial;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+.red-box {
+	margin:24px auto 0;
+	width: 600px;
+	height: 47px;
+	background: #FFEBE8;
+	border: 1.5px solid #FF1744;
+}
+
+
+.red-box p {
+    font-size: 10.5px;
+    font-family: Arial;
+    padding: 14px 0 0 20px;
+}
+
+.red-box a {
+    text-decoration: none;
+    color: #7b1f8d; 
+}
+
+.red-box a:hover {
+    text-decoration: underline;
+}
+
+.login-form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.login-form label {
+	font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 2px 10px 3px 5px;
+	margin-bottom: 5px;
+}
+.login-form input {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    transition: border-color 0.3s ease; 
+}
+.login-form input:hover {
+    border-color: #333;
+}
+
+
+footer {
+    width: 150%;
+    border-top: 3.0px solid #cccccc;
+    position: absolute;
+    bottom: -100px;
+}
+
+ul li {
+	display: inline;
+	margin: 0 0 0 28px;
+}
+
+
+ul li a {
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 10.5px;
+	color: #8d3b98;
+}
+ul li a:hover {
+	text-decoration: underline;
+}	

